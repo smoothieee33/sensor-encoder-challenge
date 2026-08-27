@@ -27,7 +27,7 @@
 ## 2. Training Setup & Parameter Count
  | Component | Direct Classifier | Context-Embedding Model |
 |---|---|---|
-| Sensor encoder | 14,022 params (shared architecture) | same architecture, trained separately |
+| Sensor encoder | 13,632 params (shared architecture) | same architecture, trained separately |
 | Projector | N/A | ~394,560 params |
 | Classification head | ~390 params (64→6) | ~5,766 params (960→6) |
 | **Total trainable** | **~14,022** | **~413,958** |
