@@ -20,7 +20,7 @@ Heres how to set this up and reproduce it!! In your terminal:
 
     export HF_HUB_DISABLE_XET=1
 
-As this forces a plain http download, skipping the xet. Set this once every terminal session or add to ~/.zshrc or ~/.barshrc
+As this forces a plain http download, skipping the xet. Set this once every terminal session or add to ~/.zshrc or ~/.bashrc
 
 Next!! Run these files in order! I used python version 3.9.6
 
