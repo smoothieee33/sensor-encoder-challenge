@@ -59,6 +59,6 @@ if __name__ == "__main__":
     num_trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print("Trainable params:", num_trainable)
 
-    fake_ass_bitch = torch.randn(4, 128, 9) 
-    logits = model(fake_ass_bitch)
+    fake_run = torch.randn(4, 128, 9) 
+    logits = model(fake_run)
     print("output shape:", logits.shape)
