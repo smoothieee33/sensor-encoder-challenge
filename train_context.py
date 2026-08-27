@@ -7,6 +7,8 @@ from data import load_train_val_test
 from train import SensorDataset
 from context_model import ContextEmbeddingModel
 
+torch.manual_seed(67)
+
 if __name__ == "__main__":
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 

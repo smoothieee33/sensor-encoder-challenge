@@ -6,6 +6,8 @@ from sklearn.metrics import accuracy_score
 from data import load_train_val_test
 from model import DirectClassifier
 
+torch.manual_seed(67)
+
 class SensorDataset(Dataset):
     def __init__(self, X, y):
         super().__init__()
