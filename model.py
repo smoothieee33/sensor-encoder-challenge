@@ -23,7 +23,7 @@ class SensorEncoder(nn.Module):
 class DirectClassifier(nn.Module):
     def __init__(self, embed_dim = 64, num_classes=6):
         super().__init__()
-        self.encoder = SensorEncoder(embed_dim) #lowk ts is funny 
+        self.encoder = SensorEncoder(embed_dim) 
         self.head = nn.Linear(in_features= embed_dim, out_features=num_classes)
 
     def forward(self, x):
