@@ -1,9 +1,8 @@
 # The Lovely... Sensor Encoder Challenge!!
-welp i lowk forgot github existed so heres a big ol push i hope yall like me anyway ik this is bad practice TwT
 
 This is the sensor encoder challenge for HCL's ML internship. The project is almost compare and contrasty, you take data from UCI's Human Activity Recognition Using Smartphones datasets and process it two ways: a small frozen LM, and an ordinary sensor classifier, (basically what you would think of when you think data classification). Lastly, you take the macro F1 for the classifier, LM, and the LM again but you shuffle the embeddings to make sure its actually using the embeddings/sensor data given. (the F1 of the second and third should match if that was the case). 
 
-Heres how to set ts up and reproduce it!! In your terminal:
+Heres how to set this up and reproduce it!! In your terminal:
 
     git clone https://github.com/smoothieee33/sensor-encoder-challenge
     
@@ -17,7 +16,7 @@ Heres how to set ts up and reproduce it!! In your terminal:
     
     unzip har.zip -d har_raw
     
-*Known Issue!* when downloading HuggingFaceTB/SmolLM2-360M-Instruct for the context embedding model, disable "xet."   There's a problem with their backend, causing downloads to hang indefinetly. Use:
+*Known Issue!* when downloading HuggingFaceTB/SmolLM2-360M-Instruct for the context embedding model, disable "xet."   There's a problem with their backend, causing downloads to hang indefinitely. Use:
 
     export HF_HUB_DISABLE_XET=1
 
