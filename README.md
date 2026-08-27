@@ -25,15 +25,15 @@ As this forces a plain http download, skipping the xet. Set this once every term
 
 Next!! Run these files in order! I used python version 3.9.6
 
--python3 train.py // trains the direct classifier and makes a best_model.pt file. Trains for 50 epochs. Seed: 67 (get it?)
--python3 evaluate_direct.py // uses best_model.pt to get result #1!!
--python3 train_context.py // trains the context model and makes a best_context_model.pt. Trains for 10 epochs. Seed: 67 (won't let it die)
--python3 evaluate_context.py // uses best_context_model.pt to get result #2!!
--python3 shuffle_check.py// uses best_context_model.pt again to get result #3!! Seed: 67 (let me be a kid ok)
+- python3 train.py // trains the direct classifier and makes a best_model.pt file. Trains for 50 epochs. Seed: 67 (get it?)
+- python3 evaluate_direct.py // uses best_model.pt to get result #1!!
+- python3 train_context.py // trains the context model and makes a best_context_model.pt. Trains for 10 epochs. Seed: 67 (won't let it die)
+- python3 evaluate_context.py // uses best_context_model.pt to get result #2!!
+- python3 shuffle_check.py// uses best_context_model.pt again to get result #3!! Seed: 67 (let me be a kid ok)
 
 RESULTS!!
-Condition:                    Macro-F1
-Direct sensor classifier      .9181
-Context-embedding model       .8861
-Context-embedding model,      .1648
-shuffled
+| Condition | Macro-F1 |
+|---|---|
+| Direct sensor classifier | 0.8943 |
+| Context-embedding model | 0.8935 |
+| Context model, shuffled embeddings | 0.1644 |
