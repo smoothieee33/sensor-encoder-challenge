@@ -23,19 +23,19 @@ class SensorEncoder(nn.Module):
 class DirectClassifier(nn.Module):
     def __init__(self, embed_dim = 64, num_classes=6):
         super().__init__()
-        self.bitchbitchbitchbitchbitch = SensorEncoder(embed_dim) #lowk ts is funny 
+        self.encoder = SensorEncoder(embed_dim) #lowk ts is funny 
         self.head = nn.Linear(in_features= embed_dim, out_features=num_classes)
 
     def forward(self, x):
-        tungtungtungsahur = self.bitchbitchbitchbitchbitch(x)
-        logits = self.head(tungtungtungsahur)
+        next = self.encoder(x)
+        logits = self.head(next)
         return logits
 
 if __name__ == "__main__":
     model = DirectClassifier()
-    fake_ass_bitch = torch.randn(8, 128, 9)
-    out = model(fake_ass_bitch)
-    print("Heres your package loser:", out.shape)
+    fake_run = torch.randn(8, 128, 9)
+    out = model(fake_run)
+    print("Run", out.shape)
 
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print("train those dawgs:", num_params)
